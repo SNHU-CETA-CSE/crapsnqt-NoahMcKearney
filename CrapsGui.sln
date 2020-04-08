@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CrapsGui", "CrapsGui.vcxproj", "{6CADFCD9-5B1E-40A4-9E4E-E1B89C8BAFBD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CrapsGui", "CrapsGui.vcxproj", "{A9BAF2D3-2000-4525-8D8D-E7367B03D6D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF8FE838-7B7B-41A3-9756-E123A59CD850}"
+	ProjectSection(SolutionItems) = preProject
+		die.cpp = die.cpp
+		die.h = die.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +17,15 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6CADFCD9-5B1E-40A4-9E4E-E1B89C8BAFBD}.Debug|x64.ActiveCfg = Debug|x64
-		{6CADFCD9-5B1E-40A4-9E4E-E1B89C8BAFBD}.Debug|x64.Build.0 = Debug|x64
-		{6CADFCD9-5B1E-40A4-9E4E-E1B89C8BAFBD}.Release|x64.ActiveCfg = Release|x64
-		{6CADFCD9-5B1E-40A4-9E4E-E1B89C8BAFBD}.Release|x64.Build.0 = Release|x64
+		{A9BAF2D3-2000-4525-8D8D-E7367B03D6D8}.Debug|x64.ActiveCfg = Debug|x64
+		{A9BAF2D3-2000-4525-8D8D-E7367B03D6D8}.Debug|x64.Build.0 = Debug|x64
+		{A9BAF2D3-2000-4525-8D8D-E7367B03D6D8}.Release|x64.ActiveCfg = Release|x64
+		{A9BAF2D3-2000-4525-8D8D-E7367B03D6D8}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D4905FC2-5E5D-4029-A289-8873033FF55E}
+		SolutionGuid = {0F8E1361-5C69-4C4D-A5C3-B8500441A709}
 	EndGlobalSection
 EndGlobal

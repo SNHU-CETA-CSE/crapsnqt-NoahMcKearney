@@ -12,14 +12,13 @@
 #include "ui_CrapsMainWindow.h"
 
 
-CrapsMainWindow :: CrapsMainWindow(QMainWindow *parent) {
-    // Build a GUI window with two dice.
+CrapsMainWindow :: CrapsMainWindow(QMainWindow *parent):
+// Build a GUI  main window for two dice.
 
+        currentBankValue { 10000 },
+        winsCount { 0 }
+{
     setupUi(this);
-
-    Die die1, die2;
-    bool firstRoll = true;
-    int winsCount = 0;
 
     QObject::connect(rollButton, SIGNAL(clicked()), this, SLOT(rollButtonClickedHandler()));
 }
@@ -36,7 +35,7 @@ void CrapsMainWindow::updateUI() {
     die1UI->setPixmap(QPixmap(QString::fromStdString(die1ImageName)));
     die2UI->setPixmap(QPixmap(QString::fromStdString(die2ImageName)));
 
-    currentBankValueUI->setText(QString::fromStdString("100"));
+    currentBankValueUI->setText(QString::fromStdString(std::to_string(currentBankValue)));
 }
 
 // Player asked for another roll of the dice.

@@ -6,21 +6,34 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>692</width>
-    <height>453</height>
+    <width>653</width>
+    <height>490</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="currentBankValueUI">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>40</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
    <widget class="QPushButton" name="rollButton">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>320</y>
-      <width>115</width>
-      <height>32</height>
+      <x>280</x>
+      <y>350</y>
+      <width>75</width>
+      <height>24</height>
      </rect>
     </property>
     <property name="text">
@@ -31,9 +44,9 @@
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>40</y>
-      <width>181</width>
-      <height>171</height>
+      <y>90</y>
+      <width>180</width>
+      <height>180</height>
      </rect>
     </property>
     <property name="text">
@@ -46,10 +59,10 @@
    <widget class="QLabel" name="die2UI">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>40</y>
-      <width>181</width>
-      <height>181</height>
+      <x>350</x>
+      <y>80</y>
+      <width>180</width>
+      <height>180</height>
      </rect>
     </property>
     <property name="text">
@@ -59,27 +72,14 @@
      <pixmap resource="crapsResources.qrc">:/dieImages/5</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="currentBankValueUI">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>10</y>
-      <width>58</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>692</width>
-     <height>22</height>
+     <width>653</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
