@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>612</width>
-    <height>420</height>
+    <width>616</width>
+    <height>429</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Repositories/crapsStarter/crapsResources.qrc">:/dieImages/5</pixmap>
+     <pixmap resource="crapsgui.qrc">:/dieImages/Resources/3.png</pixmap>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -155,7 +155,11 @@
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="userBid"/>
+          <widget class="QSpinBox" name="userBid">
+           <property name="maximum">
+            <number>1000</number>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
@@ -167,7 +171,11 @@
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QSpinBox" name="currentBankValueUI"/>
+        <widget class="QLabel" name="currentBankValueUI">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -302,7 +310,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Repositories/crapsStarter/crapsResources.qrc">:/dieImages/6</pixmap>
+     <pixmap resource="crapsgui.qrc">:/dieImages/Resources/1.png</pixmap>
     </property>
    </widget>
   </widget>
@@ -311,7 +319,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>612</width>
+     <width>616</width>
      <height>21</height>
     </rect>
    </property>
@@ -329,7 +337,7 @@
  <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="crapsgui.qrc"/>
-  <include location="../../Repositories/crapsStarter/crapsResources.qrc"/>
+  <include location="../crapsStarter/crapsResources.qrc"/>
  </resources>
  <connections/>
 </ui>

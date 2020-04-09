@@ -9,10 +9,10 @@ private:
 	float iBet;
 	float iScore;
 	float fWins = 0, fLosses = 0;
-
+	
 public:
-	Player(float iBet, float iStartingScore);
-	bool setBet(int iBet);
+	Player(float iBet = 0, float iStartingScore = 1000);
+	void setBet(int iBet);
 	float getBet();
 	void addScore(int userScore);
 	void subtractScore();

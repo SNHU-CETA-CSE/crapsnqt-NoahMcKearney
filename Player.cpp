@@ -1,30 +1,14 @@
 #include "Player.h"
 #include <iostream>
 
-Player::Player(float iBet = 0, float iStartingScore = 0)
+Player::Player(float iBet = 0, float iStartingScore = 1000)
 {
 	iBet = iBet;
 	iScore = iStartingScore;
 }
-bool Player::setBet(int iBet)
+void Player::setBet(int iBet)
 {
-	bool bBetBigger = false;
-	while (!bBetBigger)
-	{
-		if ((iBet <= iScore) && (iBet > 0))
-		{
-			bBetBigger = true;
-		}
-		else
-		{
-			// bet is larger than score
-			if (iBet > iScore)
-			{
-				return bBetBigger;
-			}
-		}
-	}
-	return bBetBigger;
+	iBet = iBet;
 }
 
 float Player::getBet()
