@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-Die::Die(int iStartingNumberOfSides = 1, int iStartingIncrement = 1, int iBeginningValue = 1)
+Die::Die(int iStartingNumberOfSides, int iStartingIncrement, int iBeginningValue)
 {
     m_iNumberOfSides = iStartingNumberOfSides;
     m_iIncrement = iStartingIncrement;

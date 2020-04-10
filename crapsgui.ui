@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>612</width>
-    <height>420</height>
+    <width>616</width>
+    <height>530</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Repositories/crapsStarter/crapsResources.qrc">:/dieImages/5</pixmap>
+     <pixmap resource="crapsgui.qrc">:/craps_ui/dieImages/3.png</pixmap>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -86,7 +86,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QLabel" name="label_3">
+          <widget class="QLabel" name="winLabel">
            <property name="font">
             <font>
              <pointsize>12</pointsize>
@@ -155,7 +155,14 @@
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="userBid"/>
+          <widget class="QSpinBox" name="userBid">
+           <property name="maximum">
+            <number>1000</number>
+           </property>
+           <property name="displayIntegerBase">
+            <number>10</number>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
@@ -167,7 +174,11 @@
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QSpinBox" name="currentBankValueUI"/>
+        <widget class="QLabel" name="currentBankValueUI">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -230,7 +241,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QLabel" name="label_5">
+          <widget class="QLabel" name="lossLabel">
            <property name="font">
             <font>
              <pointsize>12</pointsize>
@@ -279,14 +290,14 @@
    <widget class="QPushButton" name="rollButton">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>310</y>
+      <x>250</x>
+      <y>430</y>
       <width>115</width>
       <height>32</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Roll Dice</string>
     </property>
    </widget>
    <widget class="QLabel" name="die1UI">
@@ -302,7 +313,70 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Repositories/crapsStarter/crapsResources.qrc">:/dieImages/6</pixmap>
+     <pixmap resource="crapsgui.qrc">:/craps_ui/dieImages/1.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outputLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>561</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outputLabel2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>370</y>
+      <width>561</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outputLabel3">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>430</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
@@ -311,7 +385,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>612</width>
+     <width>616</width>
      <height>21</height>
     </rect>
    </property>
@@ -329,7 +403,6 @@
  <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="crapsgui.qrc"/>
-  <include location="../../Repositories/crapsStarter/crapsResources.qrc"/>
  </resources>
  <connections/>
 </ui>

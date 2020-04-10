@@ -6,22 +6,21 @@
 class Player
 {
 private:
-	float iBet;
-	float iScore;
+	int iBet;
+	float iScore = 0;
 	float fWins = 0, fLosses = 0;
 
 public:
-	Player(float iBet, float iStartingScore);
-	bool setBet(int iBet);
+	Player(float iStartingScore);
+	void setBet(float startingBet);
 	float getBet();
-	void addScore(int userScore);
+	void addScore(float userScore);
 	void subtractScore();
 	float getCurrentScore();
 	void addGameWon();
 	float getCurrentWins();
 	void addGameLoss();
 	float getCurrentLosses();
-	bool playAgain(std::string sPlayAgain);
 };
 
 #endif //CRAPS_PLAYER_H

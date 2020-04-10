@@ -1,37 +1,20 @@
 #include "Player.h"
 #include <iostream>
 
-Player::Player(float iBet = 0, float iStartingScore = 0)
+Player::Player(float iStartingScore)
 {
-	iBet = iBet;
 	iScore = iStartingScore;
 }
-bool Player::setBet(int iBet)
+void Player::setBet(float startingBet)
 {
-	bool bBetBigger = false;
-	while (!bBetBigger)
-	{
-		if ((iBet <= iScore) && (iBet > 0))
-		{
-			bBetBigger = true;
-		}
-		else
-		{
-			// bet is larger than score
-			if (iBet > iScore)
-			{
-				return bBetBigger;
-			}
-		}
-	}
-	return bBetBigger;
+	iBet = startingBet;
 }
 
 float Player::getBet()
 {
 	return iBet;
 }
-void Player::addScore(int userScore)
+void Player::addScore(float userScore)
 {
 	iScore += userScore;
 }
@@ -60,14 +43,4 @@ float Player::getCurrentLosses()
 	return fLosses;
 
 }
-bool Player::playAgain(std::string sPlayAgain)
-{
-	if (sPlayAgain == "yes")
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
+

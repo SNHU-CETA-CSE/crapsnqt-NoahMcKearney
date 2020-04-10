@@ -13,7 +13,7 @@ private:
 	int m_iValue;
 	
 public:
-	Die(int startingNumberOfSides, int startingIncrement, int beginningValue);
+	Die(int startingNumberOfSides = 1, int startingIncrement = 2, int beginningValue = 0);
 	int roll();
 	void setNumberOfSides(int newNumberOfSides);
 	int getNumberOfSides();
